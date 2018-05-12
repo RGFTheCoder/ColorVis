@@ -6,7 +6,7 @@ var clr = searchParams.get('c');
 var hex = searchParams.get('h');
 
 onload = function() {
-    if (typeof hex != "undefined") {
+    if (hex != null) {
         clr = "#" + hex;
     }
     document.querySelector("#text").style.background = clr;
